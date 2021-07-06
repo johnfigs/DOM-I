@@ -41,8 +41,32 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const codeSnipImg = document.querySelector('#cta-img');
-codeSnipImg.setAttribute('src', 'img/header-img.png');
+let codeSnipImg = document.getElementById("cta-img");
+codeSnipImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-const middleImg = document.querySelector('#middle-img');
-middleImg.setAttribute('src', '/img/mid-page-accent.jpg');
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const h1 = document.querySelector("h1");
+h1.textContent = siteContent["cta"]["h1"]
+
+const butt = document.querySelector(".cta .cta-text button");
+butt.textContent = siteContent["cta"]["button"]
+
+const firstAnchor = document.querySelector(".container header nav a");
+firstAnchor.textContent = siteContent["nav"]["nav-item-1"]
+
+const secondAnchor = firstAnchor.nextElementSibling;
+secondAnchor.textContent = siteContent["nav"]["nav-item-2"];
+
+const thirdAnchor = secondAnchor.nextElementSibling;
+thirdAnchor.textContent = siteContent["nav"]["nav-item-3"]
+
+const fourthAnchor = thirdAnchor.nextElementSibling;
+fourthAnchor.textContent = siteContent["nav"]["nav-item-4"]
+
+const fifthAnchor = fourthAnchor.nextElementSibling;
+fifthAnchor.textContent = siteContent["nav"]["nav-item-5"]
+
+const sixthAnchor = fifthAnchor.nextElementSibling;
+sixthAnchor.textContent = siteContent["nav"]["nav-item-6"]
