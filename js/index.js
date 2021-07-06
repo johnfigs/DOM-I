@@ -54,6 +54,7 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 const h1 = document.querySelector("h1");
 h1.textContent = siteContent["cta"]["h1"]
 
+
 // button
 
 const butt = document.querySelector(".cta .cta-text button");
@@ -166,5 +167,23 @@ contact_email.textContent = siteContent["contact"]["email"]
 //copyright section
 const copyr = document.querySelector("footer p");
 copyr.textContent = siteContent["footer"]["copyright"]
+
+//adding nav items
+
+const blogLink = document.createElement('a')
+blogLink.textContent = 'Blog'
+blogLink.href = '#'
+document.querySelector('nav').appendChild(blogLink)
+
+const originLink = document.createElement('a')
+originLink.textContent = 'Origin'
+originLink.href = '#'
+document.querySelector('nav').prepend(originLink)
+
+// Change the color of the navigation text to be green.
+
+const anchors = document.querySelectorAll("a");
+anchors.forEach(element => element.style.color = "green");
+
 
 
