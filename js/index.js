@@ -41,17 +41,25 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//images 
+
 let codeSnipImg = document.getElementById("cta-img");
 codeSnipImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+//h1 
+
 const h1 = document.querySelector("h1");
 h1.textContent = siteContent["cta"]["h1"]
 
+// button
+
 const butt = document.querySelector(".cta .cta-text button");
 butt.textContent = siteContent["cta"]["button"]
+
+//nav anchor
 
 const firstAnchor = document.querySelector(".container header nav a");
 firstAnchor.textContent = siteContent["nav"]["nav-item-1"]
@@ -70,3 +78,69 @@ fifthAnchor.textContent = siteContent["nav"]["nav-item-5"]
 
 const sixthAnchor = fifthAnchor.nextElementSibling;
 sixthAnchor.textContent = siteContent["nav"]["nav-item-6"]
+
+//top content text containers
+
+//selecting first text-content div
+
+const tc1 = document.querySelector(".top-content .text-content");
+
+//selecting h4 + p inside above element
+
+const first_h4 = tc1.querySelector("h4");
+first_h4.textContent = siteContent["main-content"]["features-h4"]
+
+const first_p = tc1.querySelector("p");
+first_p.textContent = siteContent["main-content"]["features-content"]
+
+//selecting second text-content div
+
+const tc2 = tc1.nextElementSibling;
+
+//selecting h4 + p inside second element selected above
+
+const second_h4 = tc2.querySelector("h4");
+second_h4.textContent = siteContent["main-content"]["about-h4"]
+
+const second_p = tc2.querySelector("p");
+second_p.textContent = siteContent["main-content"]["about-content"]
+
+//bottom content text containers
+
+//selecting first text-content div
+
+const bc1 = document.querySelector(".bottom-content .text-content");
+
+//select h4 + p from above element
+
+const bfirst_h4 = bc1.querySelector("h4");
+bfirst_h4.textContent = siteContent["main-content"]["services-h4"]
+
+const bfirst_p = bc1.querySelector("p");
+bfirst_p.textContent = siteContent["main-content"]["services-content"]
+
+//selecting second text-content div
+
+const bc2 = bc1.nextElementSibling;
+
+//select h4 + p of above element
+
+const bc2_h4 = bc2.querySelector("h4");
+bc2_h4.textContent = siteContent["main-content"]["product-h4"]
+
+const bc2_p = bc2.querySelector("p")
+bc2_p.textContent = siteContent["main-content"]["product-content"]
+
+//selecting third text-content div
+const bc3 = bc2.nextElementSibling;
+//select h4 + p  of above element
+const bc3_h4 = bc3.querySelector("h4");
+bc3_h4.textContent = siteContent["main-content"]["vision-h4"]
+
+const bc3_p = bc3.querySelector("p");
+bc3_p.textContent = siteContent["main-content"]["vision-content"]
+
+//main content border
+const mainCont = document.querySelector(".container .main-content");
+mainCont.style.borderBottom = "2px solid black"
+
