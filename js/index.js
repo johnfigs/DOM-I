@@ -144,3 +144,27 @@ bc3_p.textContent = siteContent["main-content"]["vision-content"]
 const mainCont = document.querySelector(".container .main-content");
 mainCont.style.borderBottom = "2px solid black"
 
+//contact section
+const contact = document.querySelector(".contact")
+
+//contact h4
+const contact_h4 = contact.querySelector("h4");
+contact_h4.textContent = siteContent["contact"]["contact-h4"];
+
+//contact address
+const contact_address = contact.querySelector("p");
+contact_address.textContent = siteContent["contact"]["address"]
+
+//contact phone
+const contact_phone = contact_address.nextElementSibling;
+contact_phone.textContent = siteContent["contact"]["phone"]
+
+//contact email
+const contact_email = contact_phone.nextElementSibling;
+contact_email.textContent = siteContent["contact"]["email"]
+
+//copyright section
+const copyr = document.querySelector("footer p");
+copyr.textContent = siteContent["footer"]["copyright"]
+
+
